@@ -187,34 +187,20 @@ echo $chainName
 
 
 ag-cosmos-helper tx staking create-validator \
-
---amount=50000000uagstake \
-
---broadcast-mode=block \
-
---pubkey= \
-
---moniker= \
-
---website= \
-
---details= \
-
-- themselves - rate = "0.10" \
-
-- themselves - Max - rate = "0.20" \
-
-- themselves - Max - change - rate = "0.01" \
-
---min-self-delegation="1" \
-
---from= \
-
---chain-id=$chainName \
-
---gas=auto \
-
-- gas - adjustment = 1.4
+  --amount=50000000uagstake \
+  --broadcast-mode=block \
+  --pubkey=<your-agoricvalconspub1-key> \
+  --moniker=<your-node-name> \
+  --website=<your-node-website> \
+  --details=<your-node-details> \
+  --commission-rate="0.10" \
+  --commission-max-rate="0.20" \
+  --commission-max-change-rate="0.01" \
+  --min-self-delegation="1" \
+  --from=<your-key-name> \
+  --chain-id=$chainName \
+  --gas=auto \
+  --gas-adjustment=1.4
 
 
 

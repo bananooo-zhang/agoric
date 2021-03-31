@@ -1,4 +1,4 @@
-#creatr a new file,and copy this command,use ./ start
+#Creatr a new file,and copy this command,use ./ start
 curl https://dl.google.com/go/go1.15.7.linux-amd64.tar.gz | sudo tar -C/usr/local -zxvf -
 cat <<'EOF' >>$HOME/.profile
 export GOROOT=/usr/local/go
